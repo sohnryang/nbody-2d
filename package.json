@@ -1,0 +1,24 @@
+{
+  "name": "nbody-2d",
+  "version": "1.0.0",
+  "description": "2D n-body simulation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohnryang/nbody-2d.git"
+  },
+  "keywords": [
+    "javascript",
+    "physics",
+    "n-body"
+  ],
+  "author": "Ryang Sohn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sohnryang/nbody-2d/issues"
+  },
+  "homepage": "https://github.com/sohnryang/nbody-2d#readme"
+}
