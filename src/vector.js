@@ -18,3 +18,5 @@ export class Vector2D {
     return Math.hypot(this.x, this.y);
   }
 }
+
+module.exports = Vector2D;
