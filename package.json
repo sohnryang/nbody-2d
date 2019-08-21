@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,11 @@
   },
   "homepage": "https://github.com/sohnryang/nbody-2d#readme",
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "mocha": "^6.2.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
     "parcel": "^1.12.3"
   }
 }
