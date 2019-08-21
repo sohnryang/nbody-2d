@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/sohnryang/nbody-2d#readme",
   "devDependencies": {
+    "mocha": "^6.2.0",
     "parcel": "^1.12.3"
   }
 }
