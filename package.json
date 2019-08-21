@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sohnryang/nbody-2d/issues"
   },
-  "homepage": "https://github.com/sohnryang/nbody-2d#readme"
+  "homepage": "https://github.com/sohnryang/nbody-2d#readme",
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
 }
