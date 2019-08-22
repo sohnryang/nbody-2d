@@ -1,6 +1,7 @@
 export class RigidBody {
-  constructor(radius, pos, velocity) {
+  constructor(radius, mass, pos, velocity) {
     this.radius = radius;
+    this.mass = mass;
     this.pos = pos;
     this.velocity = velocity;
   }
