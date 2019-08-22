@@ -4,7 +4,7 @@
   "description": "2D n-body simulation.",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/parcel index.html",
+    "start": "./node_modules/.bin/parcel ./src/index.html",
     "test": "./node_modules/.bin/jest"
   },
   "repository": {
