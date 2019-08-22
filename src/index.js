@@ -13,8 +13,8 @@ worker.onmessage = function(e) {
   bodies = e.data;
 };
 
-function updatePhysics() {
-  worker.postMessage('updatePhysics');
+function render() {
+  worker.postMessage('render');
   const offsetVec = new Vector2D(window.innerWidth / 2, window.innerHeight / 2);
   for (const body of bodies) {
     const screenPos = offsetVec.add(body.pos);
@@ -23,7 +23,7 @@ function updatePhysics() {
     ctx.fillStyle = "#000000";
     ctx.fill();
   }
-  window.requestAnimationFrame(updatePhysics);
+  window.requestAnimationFrame(render);
 }
 
-window.requestAnimationFrame(updatePhysics);
+window.requestAnimationFrame(render);
