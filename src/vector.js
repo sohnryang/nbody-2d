@@ -17,6 +17,11 @@ export class Vector2D {
   l2norm() {
     return Math.hypot(this.x, this.y);
   }
+
+  mult(scalar) {
+    const result = new Vector2D(this.x * scalar, this.y * scalar);
+    return result;
+  }
 }
 
 module.exports = Vector2D;

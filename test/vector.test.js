@@ -25,3 +25,8 @@ test('L2 norm in Vector2D is calculated properly', () => {
   const testVec2 = new Vector2D(1, 1);
   expect(testVec2.l2norm()).toEqual(Math.sqrt(2));
 });
+
+test('Vector multiplies with scalar properly', () => {
+  const testVec = new Vector2D(1, 1);
+  expect(testVec.mult(10)).toEqual({x: 10, y: 10});
+});
