@@ -22,6 +22,12 @@ export class Vector2D {
     const result = new Vector2D(this.x * scalar, this.y * scalar);
     return result;
   }
+
+  normalize() {
+    const len = this.l2norm();
+    const result = new Vector2D(this.x / len, this.y / len);
+    return result;
+  }
 }
 
 module.exports = Vector2D;

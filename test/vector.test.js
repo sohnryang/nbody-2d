@@ -30,3 +30,8 @@ test('Vector multiplies with scalar properly', () => {
   const testVec = new Vector2D(1, 1);
   expect(testVec.mult(10)).toEqual({x: 10, y: 10});
 });
+
+test('Vector normalizes properly', () => {
+  const testVec = new Vector2D(3, 4);
+  expect(testVec.normalize()).toEqual({x: 3 / 5, y: 4 / 5});
+});
