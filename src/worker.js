@@ -1,3 +1,4 @@
+import {gravitation} from './gravitation';
 import RigidBody from './rigid-body';
 import Vector2D from './vector';
 
@@ -16,4 +17,12 @@ initializeBodies();
 
 onmessage = function() {
   postMessage(bodies);
+  for (const body1 of bodies) {
+    for (const body2 of bodies) {
+      if (body1 == body2)
+        continue;
+      const gravity = gravitation(body1, body2);
+      this.console.log(`Size of gravity between objects: ${gravity}`);
+    }
+  }
 };
