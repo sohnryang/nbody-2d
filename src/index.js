@@ -15,6 +15,7 @@ worker.onmessage = function(e) {
 
 function render() {
   worker.postMessage('render');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   const offsetVec = new Vector2D(window.innerWidth / 2, window.innerHeight / 2);
   for (const body of bodies) {
     const screenPos = offsetVec.add(body.pos);
