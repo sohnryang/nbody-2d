@@ -9,7 +9,7 @@ if (!window.Worker) {
 }
 const worker = new Worker('worker.js');
 let bodies = [];
-worker.onmessage = function(e) {
+worker.onmessage = (e) => {
   bodies = e.data;
 };
 
