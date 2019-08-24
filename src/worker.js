@@ -11,7 +11,10 @@ function initializeBodies() {
   const pos2 = new Vector2D(200, 50);
   const vel2 = new Vector2D(0, 0);
   const body2 = new RigidBody(40, 1, pos2, vel2);
-  bodies = [body1, body2];
+  const pos3 = new Vector2D(-200, 150);
+  const vel3 = new Vector2D(0, 0);
+  const body3 = new RigidBody(40, 1, pos3, vel3);
+  bodies = [body1, body2, body3];
 }
 initializeBodies();
 
